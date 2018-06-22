@@ -20,7 +20,7 @@ var treeMenu = [
 	{ level:1, name:"领导管理"},
 	{ level:2, name:"领导列表", ico:"images/icon_default.gif",link:"teachers/Teachers_query.action"},
 	{ level:1, name:"信息管理"},
-	{ level:2, name:"新闻管理", ico:"images/icon_default.gif",link:"news_list.html"},
+	{ level:2, name:"新闻管理", ico:"images/icon_default.gif",link:"news/News_query.action"},
 	{ level:2, name:"公告管理", ico:"images/icon_default.gif",link:"bulletin_list.html"},
 	{ level:1, name:"系统邮件", ico:"images/icon_default.gif"},
 	{ level:1, name:"网络文件", ico:"images/icon_default.gif",link:"complaint_list.html"}
