@@ -101,7 +101,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </tr>
   <tr>
     <td width="30%">主题：</td>
-    <td><input type="text" name="title" value='<s:property value="#session.modify_news.title"/>'  readonly="readonly"/></td>
+    <td><input type="text" name="title" value='<s:property value="#session.modify_news.title"/>'/></td>
   </tr>
   <tr>
     <td width="30%">作者：</td>
