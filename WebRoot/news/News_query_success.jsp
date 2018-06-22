@@ -126,7 +126,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td><s:date name="#ne.updateTime" format="yyyy年MM月dd日"/></td>
 		<td><s:property value="#ne.content"/></td>
 		<td><s:property value="#ne.keywords"/></td>
-		<td><a href="<%=path%>/news/News_modify.action?nid=<s:property value="#ne.nid"/>" onclick="javascript: return confirm('真的要修改吗？');">修改</a>&nbsp;&nbsp;
+		<td><a href="<%=path%>/news/News_modify.action?nid=<s:property value="#ne.nid"/>">修改</a>&nbsp;&nbsp;
 		<a href="<%=path%>/news/News_delete.action?nid=<s:property value="#ne.nid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a>
 		</td>
 	</tr>

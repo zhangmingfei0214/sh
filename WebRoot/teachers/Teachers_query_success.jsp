@@ -79,8 +79,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div id="navi">
 	<div id='naviDiv'>
-		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;学生管理<span>&nbsp;
-		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;<a href="<%=path%>/teachers/Teachers_query.action">学生列表</a><span>&nbsp;
+		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;领导管理<span>&nbsp;
+		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;<a href="<%=path%>/teachers/Teachers_query.action">领导列表</a><span>&nbsp;
 	</div>
 </div>
 <div id="tips">
@@ -121,8 +121,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td><s:property value="#teach.gender"/></td>
 		<td><s:date name="#teach.birthday" format="yyyy年MM月dd日"/></td>
 		<td><s:property value="#teach.address"/></td>
-		<td><a href="<%=path%>/teachers/Teachers_modify.action?sid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要修改吗？');">修改</a>&nbsp;&nbsp;
-			<a href="<%=path%>/teachers/Teachers_delete.action?sid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a>
+		<td><a href="<%=path%>/teachers/Teachers_modify.action?tid=<s:property value="#teach.tid"/>">修改</a>&nbsp;&nbsp;
+			<a href="<%=path%>/teachers/Teachers_delete.action?tid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a>
 		</td>
 	</tr>
 	</s:iterator>
