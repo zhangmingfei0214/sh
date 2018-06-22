@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- 导航空白 -->
 </div>
 <div id="mainContainer">
-   <strong>添加成功，<a href="<%=path%>/students/Students_add.jsp">继续添加？</a></strong>
+   <strong>添加成功，<a href="<%=path%>/news/News_add.jsp">继续添加？</a></strong>
    <!--数据表格空白 -->
 </div>
 </body>

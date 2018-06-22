@@ -105,13 +105,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <tr>
     <td>发布时间：</td>
     <td><input name="releaseTime" type="text" id="control_date" size="20"
-      maxlength="10" onclick="new Calendar().show(this);" readonly="readonly" />
+      maxlength="10" onclick="new Calendar().show(this);" />
     </td>
   </tr>
   <tr>
     <td>修改时间：</td>
     <td><input name="updateTime" type="text" id="control_date" size="20"
-      maxlength="10" onclick="new Calendar().show(this);" readonly="readonly" />
+      maxlength="10" onclick="new Calendar().show(this);" />
     </td>
   </tr>
   <tr>

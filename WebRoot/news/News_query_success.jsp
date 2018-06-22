@@ -99,11 +99,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <table class="default" width="100%">
 	<col width="10%">
-	<col width="20%">
-	<col width="5%">
-	<col width="20%">
-	<col width="30%">
-	<col width="15%">
+	<col width="10%">
+	<col width="10%">
+	<col width="10%">
+	<col width="40%">
+	<col width="10%">
+	<col width="10%">
 	<tr class="title">
 		<td>编号</td>
 		<td>主题</td>
