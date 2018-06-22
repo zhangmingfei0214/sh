@@ -80,7 +80,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <div id="navi">
 	<div id='naviDiv'>
-		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;学生管理<span>&nbsp;
+		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;领导管理<span>&nbsp;
 		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;<a href="<%=path%>/teachers/Teachers_query.action">领导列表</a><span>&nbsp;
 	</div>
 </div>
@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 <div id="mainContainer">
 <!-- 从session中获取学生集合 -->
-<strong>添加学生资料</strong>
+<strong>添加领导资料</strong>
 <br>
 <br>
 <form name="addForm" action="<%=path%>/teachers/Teachers_add.action" method="post">

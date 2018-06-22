@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 <div id="mainContainer">
 <!-- 从session中获取学生集合 -->
-<strong>添加学生资料</strong>
+<strong>添加员工资料</strong>
 <br>
 <br>
 <form name="addForm" action="<%=path%>/students/Students_add.action" method="post">

@@ -86,10 +86,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div id="tips">
 	<div id="buttonGroup">
 		<div class="button" onmouseout="this.style.backgroundColor='';this.style.fontWeight='normal'" onmouseover="this.style.backgroundColor='#77D1F6';this.style.fontWeight='bold'">
-			<a href="<%=path%>/students/Students_add.jsp">添加学生</a>
+			<a href="<%=path%>/students/Students_add.jsp">添加员工</a>
 		</div>
 		<div class="button" onmouseout="this.style.backgroundColor='';this.style.fontWeight='normal'" onmouseover="this.style.backgroundColor='#77D1F6';this.style.fontWeight='bold'">
-			<a>查找学生</a>
+			<a>查找员工</a>
 		</div>
 	</div>
 </div>
@@ -98,9 +98,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <table class="default" width="100%">
 	<col width="10%">
-	<col width="20%">
-	<col width="5%">
-	<col width="20%">
+	<col width="10%">
+	<col width="1%">
+	<col width="10%">
 	<col width="30%">
 	<col width="15%">
 	<tr class="title">
@@ -120,7 +120,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td><s:property value="#stu.gender"/></td>
 		<td><s:date name="#stu.birthday" format="yyyy年MM月dd日"/></td>
 		<td><s:property value="#stu.address"/></td>
-		<td><a href="<%=path%>/students/Students_delete.action?sid=<s:property value="#stu.sid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a></td>
+		<td><a href="<%=path%>/students/Students_modify.action?sid=<s:property value="#stu.sid"/>" onclick="javascript: return confirm('真的要修改吗？');">修改</a>&nbsp;&nbsp;
+		<a href="<%=path%>/students/Students_delete.action?sid=<s:property value="#stu.sid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a></td>
 	</tr>
 	</s:iterator>
 	<!-- 遍历结束 -->

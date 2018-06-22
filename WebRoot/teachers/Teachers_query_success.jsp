@@ -86,10 +86,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div id="tips">
 	<div id="buttonGroup">
 		<div class="button" onmouseout="this.style.backgroundColor='';this.style.fontWeight='normal'" onmouseover="this.style.backgroundColor='#77D1F6';this.style.fontWeight='bold'">
-			<a href="<%=path%>/teachers/Teachers_add.jsp">添加学生</a>
+			<a href="<%=path%>/teachers/Teachers_add.jsp">添加领导</a>
 		</div>
 		<div class="button" onmouseout="this.style.backgroundColor='';this.style.fontWeight='normal'" onmouseover="this.style.backgroundColor='#77D1F6';this.style.fontWeight='bold'">
-			<a>查找学生</a>
+			<a>查找领导</a>
 		</div>
 	</div>
 </div>
@@ -121,7 +121,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td><s:property value="#teach.gender"/></td>
 		<td><s:date name="#teach.birthday" format="yyyy年MM月dd日"/></td>
 		<td><s:property value="#teach.address"/></td>
-		<td><a href="<%=path%>/teachers/Teachers_delete.action?sid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a></td>
+		<td><a href="<%=path%>/teachers/Teachers_modify.action?sid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要修改吗？');">修改</a>&nbsp;&nbsp;
+			<a href="<%=path%>/teachers/Teachers_delete.action?sid=<s:property value="#teach.tid"/>" onclick="javascript: return confirm('真的要删除吗？');">删除</a>
+		</td>
 	</tr>
 	</s:iterator>
 	<!-- 遍历结束 -->
