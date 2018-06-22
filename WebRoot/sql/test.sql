@@ -14,6 +14,8 @@ Date: 2015-07-19 10:48:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+create database test;
+use test;
 
 -- ----------------------------
 -- Table structure for students
@@ -28,6 +30,27 @@ CREATE TABLE `students` (
   PRIMARY KEY (`sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `teachers` (
+  `tid` varchar(8) NOT NULL,
+  `tname` varchar(255) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`tid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `news` (
+  `nid` varchar(8) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `author` varchar(255) DEFAULT NULL,
+  `release_time` date DEFAULT NULL,
+   `update_time` date DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+   `keywords` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`nid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
 -- ----------------------------
 -- Records of students
 -- ----------------------------
@@ -35,6 +58,10 @@ INSERT INTO `students` VALUES ('S0000001', '张三丰', '男', '2015-06-24', '�
 INSERT INTO `students` VALUES ('S0000002', '张无忌', '男', '2015-06-24', '武当山');
 INSERT INTO `students` VALUES ('S0000004', '李白', '女', '2015-06-06', '西安长安区');
 
+
+INSERT INTO `teachers` VALUES ('T0000001', '赵敏', '男', '2015-06-24', '北京');
+INSERT INTO `teachers` VALUES ('T0000002', '小赵', '男', '2015-06-24', '上海');
+INSERT INTO `teachers` VALUES ('T0000003', '小美', '女', '2015-06-06', '广州');
 -- ----------------------------
 -- Table structure for users
 -- ----------------------------
