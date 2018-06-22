@@ -23,7 +23,7 @@ public class NewsDAOImpl implements NewsDAO{
 			String hql = "";
 			Session session = MyHibernateSessionFactoty.getSessionFactory().getCurrentSession();
 			tx = session.beginTransaction();
-			hql = "from News";
+			hql = " from News ";
 			Query query = session.createQuery(hql);
 			
 			list = query.list();
@@ -32,7 +32,7 @@ public class NewsDAOImpl implements NewsDAO{
 			return list;
 		} catch (Exception e) {
 			e.printStackTrace();
-			tx.commit();
+//			tx.commit();
 			return list;
 		} finally {
 			if(tx != null) {
@@ -50,7 +50,7 @@ public class NewsDAOImpl implements NewsDAO{
 			Session session = MyHibernateSessionFactoty.getSessionFactory().getCurrentSession();
 			//开启事务
 			tx = session.beginTransaction();
-			n = session.get(News.class, nid);
+			n = (News)session.get(News.class, nid);
 			//提交事务
 			tx.commit();
 			return n;
